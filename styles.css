@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://cdn-res.keymedia.com/cms/images/us/069/0248_637419021167631744.jpg');
+    background-size: cover;
+    background-position: center;
+
+    font-family: Arial, sans-serif;
+    background-color: #060510;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+.container {
+  position: relative;
+  background-color: rgba(255, 255, 255, 255); /* Adjust the alpha value (0 to 1) for transparency */
+  padding: 20px;
+  border-radius: 10px; /* Optional: add rounded corners to the container */
+  color:aliceblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #eeefef;
+    text-shadow: 0 0 10px rgba(248, 248, 248, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+
+}
+
+label {
+    margin-bottom: 8px;
+        
+        text-align: right;
+        color: #e2e4e5;
+    text-shadow: 0 0 10px rgba(221, 223, 226, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+
+}
+
+input {
+  margin: 30px;
+  max-width: 210px;
+  padding: 7px 15px;
+  background-color: #ececee;
+  font-size: 20px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #e7e9ea;
+    text-align: right;
+    text-shadow: 0 0 10px rgba(209, 210, 212, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+
+}
+
+button {
+    min-height: 53px;
+    min-width: 166px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, right top, color-stop(-12.74%, rgba(110, 239, 255, .5)), color-stop(56.76%, rgba(106, 224, 255, .271)));
+    background: linear-gradient(90deg, rgba(110, 239, 255, .5) -12.74%, rgba(106, 224, 255, .271) 56.76%);
+    border: 2px solid #acf7ff;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(80, 148, 177, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+
+  }
+  
+  button:before {
+    content: "";
+    width: 4px;
+    height: 28px;
+    background: #e6e6e7;
+    border: 2px solid #acf7ff;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+    bottom: -7px;
+    left: 4px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  
+  button:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #fffcf7;
+  }
+
+
+  
+  .radio-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .radio-button input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-checkmark {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #f7f6f6;
+    border-radius: 50%;
+  }
+  
+  .radio-checkmark:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ececec;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .radio-label {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    color: rgb(251, 251, 251);
+    border-radius: 8px;
+    margin: 0 auto; 
+    display: block; 
+    width: fit-content;
+  }
+  
+
+  
+
+.radio-wrapper {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio-container {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+.radio-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
